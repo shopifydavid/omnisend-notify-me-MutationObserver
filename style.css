@@ -1,0 +1,11 @@
+div[id^="omnisend-embedded"] * {
+  font-family: "proxima-nova", sans-serif !important;
+}
+div[id^="omnisend-embedded"] input {
+  border-radius: 0 !important;
+}
+@media screen and (max-width:600px) {
+  div[id^="omnisend-embedded"] .omnisend-mobile-container > div {
+    padding: 5px 0 !important;
+  }  
+}

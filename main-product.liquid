@@ -1,0 +1,8 @@
+{% if request.locale.iso_code == 'en' %}
+  <div id="omnisend-embedded-v2-en-1234" class="product-form__notify-form"></div>
+{% elsif request.locale.iso_code == 'fr' %}        
+  <div id="omnisend-embedded-v2-fr-1234" class="product-form__notify-form"></div>
+{% endif %}      
+  <div class="product-form__buy-buttons" {{ block.shopify_attributes }}>
+   <product-form class="product-form{% if block.settings.show_buy_now %} product-form--two-cols{% endif %}"></product-form>
+  </div>
